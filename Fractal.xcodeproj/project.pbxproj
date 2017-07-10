@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		38525A971F130F89007EE283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38525A961F130F89007EE283 /* AppDelegate.swift */; };
-		38525A991F130F89007EE283 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38525A981F130F89007EE283 /* ViewController.swift */; };
+		38525A991F130F89007EE283 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38525A981F130F89007EE283 /* GameViewController.swift */; };
 		38525A9C1F130F8A007EE283 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38525A9A1F130F8A007EE283 /* Main.storyboard */; };
 		38525A9E1F130F8A007EE283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38525A9D1F130F8A007EE283 /* Assets.xcassets */; };
 		38525AA11F130F8A007EE283 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38525A9F1F130F8A007EE283 /* LaunchScreen.storyboard */; };
+		388EDDE81F1337E000BCD166 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 388EDDE71F1337E000BCD166 /* GameScene.sks */; };
+		388EDDEC1F13380000BCD166 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388EDDEB1F13380000BCD166 /* GameScene.swift */; };
+		388EDDEE1F13382800BCD166 /* Fractal.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 388EDDED1F13382800BCD166 /* Fractal.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		38525A931F130F89007EE283 /* Fractal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fractal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38525A961F130F89007EE283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		38525A981F130F89007EE283 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		38525A981F130F89007EE283 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		38525A9B1F130F8A007EE283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38525A9D1F130F8A007EE283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38525AA01F130F8A007EE283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38525AA21F130F8A007EE283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		388EDDE71F1337E000BCD166 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		388EDDEB1F13380000BCD166 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		388EDDED1F13382800BCD166 /* Fractal.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +60,11 @@
 		38525A951F130F89007EE283 /* Fractal */ = {
 			isa = PBXGroup;
 			children = (
+				388EDDE71F1337E000BCD166 /* GameScene.sks */,
+				388EDDEB1F13380000BCD166 /* GameScene.swift */,
 				38525A961F130F89007EE283 /* AppDelegate.swift */,
-				38525A981F130F89007EE283 /* ViewController.swift */,
+				38525A981F130F89007EE283 /* GameViewController.swift */,
+				388EDDED1F13382800BCD166 /* Fractal.fsh */,
 				38525A9A1F130F8A007EE283 /* Main.storyboard */,
 				38525A9D1F130F8A007EE283 /* Assets.xcassets */,
 				38525A9F1F130F8A007EE283 /* LaunchScreen.storyboard */,
@@ -124,7 +133,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				388EDDE81F1337E000BCD166 /* GameScene.sks in Resources */,
 				38525AA11F130F8A007EE283 /* LaunchScreen.storyboard in Resources */,
+				388EDDEE1F13382800BCD166 /* Fractal.fsh in Resources */,
 				38525A9E1F130F8A007EE283 /* Assets.xcassets in Resources */,
 				38525A9C1F130F8A007EE283 /* Main.storyboard in Resources */,
 			);
@@ -137,7 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38525A991F130F89007EE283 /* ViewController.swift in Sources */,
+				388EDDEC1F13380000BCD166 /* GameScene.swift in Sources */,
+				38525A991F130F89007EE283 /* GameViewController.swift in Sources */,
 				38525A971F130F89007EE283 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +314,7 @@
 				38525AA71F130F8A007EE283 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
